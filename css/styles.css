@@ -1,7 +1,7 @@
 :root{
     --main-text-color: #212121;
     --second-text-color: #757575;
-    --white: #fff;
+    --main-bg-color: #ffffff;
     --active-link-hover-color: #2196F3;
     --footer-contacts-color: #FFFFFF99;
     --bg-color-section-black: #2F303A;
@@ -13,32 +13,47 @@
 body{
     background-color: #fff;
     color: var(--main-text-color);
+
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
 }
 
+h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17em;
+}
+
+/*Студия*/
+/*Логотип*/
 .logo{
+    color: var(--main-text-color);
+
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
+    line-height: 1.19em;
+    
     text-decoration: none;
-    color: var(--main-text-color);
 }
 
 .logo-web{
     color: var(--active-link-hover-color);
 }
 
+/*Навигация по сайту*/
 .navigate-list{
     list-style: none;
 }
 
 .navigate-link{
-    font-weight: 500;
     color: var(--main-text-color);
+    
+    font-weight: 500;
+    line-height: 1.14em;
+    letter-spacing: 0.02em;
+
     text-decoration: none;
 }
 
@@ -47,10 +62,18 @@ body{
     color:var(--active-link-hover-color);
 }
 
+/*Активная вкладка*/
+.active{
+    color: var(--active-link-hover-color);
+}
+
+/*E-mail и телефон*/
 .mail-head,
 .tel-head{ 
-    font-weight: 500;
     color: var(--second-text-color);
+
+    font-weight: 500;
+   
     text-decoration: none;
 }
 
@@ -61,29 +84,37 @@ body{
     color: var(--active-link-hover-color);
 }
 
+/*Заказ услуги*/
 .order{
-    text-align: center;
-    letter-spacing: 0.06em;
+    color: var(--main-bg-color);
     background-color: var(--bg-color-section-black);
-    color: var(--white);
+
+    letter-spacing: 0.06em;
+
+    text-align: center;
 }
 
 .order-head{
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36em;
+    
     text-transform: uppercase;
 }
 
 .order-btn{
-    font-family: 'Roboto', sans-serif;
+    color: var(--main-bg-color);
+    background-color: var(--bg-button-color);
+    
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88em;
     letter-spacing: 0.03em;
+
     align-items: center;
-    background-color: var(--bg-button-color);
-    color: var(--white);
+    
+    
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
@@ -94,6 +125,7 @@ body{
     background-color: var(--bg-buton-hover-color);
 }
 
+/*Настройки скрытого класса*/
 .visually-hidden{
     position: absolute;
     width: 1px;
@@ -107,25 +139,27 @@ body{
     overflow: hidden;
 }
 
+/*Наши сильные стороны*/
 .strongths-list{
     list-style: none;
 }
 
 .strongths-list h3{
-    text-transform: uppercase;
     font-weight: 700;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 1.88em;
+
+    text-transform: uppercase;
 }
 
 .strongths-list p{
-    line-height: 24px;
     color: var(--second-text-color);
+
+    line-height: 1.71em;
 }
 
+/*Чем мы занимаемся*/
 .doing-head{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
     text-align: center;
 }
 
@@ -137,10 +171,8 @@ body{
     background-color: var(--bg-color-section-white);
 }
 
+/*Наша команда*/
 .team-head{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
     text-align: center;
 }
 
@@ -151,32 +183,37 @@ body{
 .team-list h3{
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19em;
+
     text-align: center;
 }
 
 .team-list p{
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
     color: var(--second-text-color);
+
+    font-size: 16px;
+    line-height: 1.19em;
+
+    text-align: center;
 }
 
+/*Footer*/
 footer{
     background-color: var(--bg-color-section-black);
 }
 
 footer > .logo{
-    color: var(--white);
+    color: var(--main-bg-color);
 }
 
+/*Контакты*/
 .address{
     font-style: normal;
     list-style: none;
 }
 
 .address-locate{
-    color: var(--white);
+    color: var(--main-bg-color);
     text-decoration: none;
 }
 
@@ -195,14 +232,18 @@ footer > .logo{
     color: var(--active-link-hover-color);
 }
 
+/*Портфолио*/
+/*Навигация по странице*/
 .navigate-btn{
-    background: var(--bg-color-section-white);
     color: var(--main-text-color);
-    font-family: 'Roboto', sans-serif;
+    background: var(--bg-color-section-white);
+    
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.62em;
     letter-spacing: 0.03em;
+
     text-align: center;
     border-style: none;
     cursor: pointer;
@@ -210,12 +251,14 @@ footer > .logo{
 
 .navigate-btn:hover,
 .navigate-btn:focus{
+    color: var(--main-bg-color);
     background-color: var(--bg-button-color);
-    color: var(--white);
+    
     border-radius: 4px; 
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+/*Примеры работ*/
 .example-list{
     list-style: none;
 }
@@ -223,15 +266,15 @@ footer > .logo{
 .example-list h3{
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2em;
     letter-spacing: 0.06em;
 }
 
 .example-list p{
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.03em;
     color: var(--second-text-color);
+
+    font-size: 16px;
+    line-height: 1.88em;
 }
 
 
